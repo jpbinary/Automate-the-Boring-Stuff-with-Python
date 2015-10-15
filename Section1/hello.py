@@ -5,6 +5,7 @@ print('Hello world!')
 
 print('What is your name?')
 my_name = input()
+    # input() always returns a string by default
 print('It is good to meet you, ' + my_name)
 print('The length of your name is: ')
 print(len(my_name))
