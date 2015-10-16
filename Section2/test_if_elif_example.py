@@ -9,10 +9,11 @@ class SimpleTest(unittest.TestCase):
     # define the tests you want to run
     def test_names(self):
         # these run the check_name function with the specified arguments, and check for the proper return value
-        self.assertEquals(check_name('Bob', 1), 'Hi Bob')
-        self.assertEquals(check_name('Billy', 3), 'You are not Alice, kiddo.')
-        self.assertEquals(check_name('Gina', 4000), 'Unlike you, Alice is not immortal.')
-        self.assertEquals(check_name('Alice', 22), 'Hi Alice')
+        self.assertEqual(check_name('Bob', 1), 'Hi Bob')
+        self.assertEqual(check_name('Billy', 3), 'You are not Alice, kiddo.')
+        self.assertEqual(check_name('Gina', 4000), 'Unlike you, Alice is not immortal.')
+        self.assertEqual(check_name('Alice', 22), 'Hi Alice')
+
 
 
 if __name__ == '__main__':
